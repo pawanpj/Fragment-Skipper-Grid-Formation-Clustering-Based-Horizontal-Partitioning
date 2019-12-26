@@ -1,0 +1,2602 @@
+[{
+	"QueryNumber": "100_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "FOB"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "102_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "107_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "10_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "113_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "116_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "120_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "122_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "124_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "129_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "12_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "SHIP"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "TRUCK"
+		}]
+	}
+}, {
+	"QueryNumber": "135_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "138_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "142_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "144_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "SHIP"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "146_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "14_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "151_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "157_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "160_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "164_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "166_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "TRUCK"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "168_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "173_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "179_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "182_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "186_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "188_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "190_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "195_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "19_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "201_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "204_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "208_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "210_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "MAIL"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}]
+	}
+}, {
+	"QueryNumber": "212_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "217_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "223_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "226_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "230_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "232_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1994-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1994-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "SHIP"
+		}]
+	}
+}, {
+	"QueryNumber": "234_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "239_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "245_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "248_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "252_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "254_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "SHIP"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}]
+	}
+}, {
+	"QueryNumber": "256_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "25_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "261_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "267_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "270_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "274_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "276_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "SHIP"
+		}]
+	}
+}, {
+	"QueryNumber": "278_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "283_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "289_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "28_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "292_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "296_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "298_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}]
+	}
+}, {
+	"QueryNumber": "300_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "305_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "311_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "314_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "318_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "320_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "MAIL"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}]
+	}
+}, {
+	"QueryNumber": "322_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "327_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "32_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "333_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "336_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "340_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "342_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "FOB"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "344_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "349_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "34_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1995-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1995-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "TRUCK"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "FOB"
+		}]
+	}
+}, {
+	"QueryNumber": "355_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "358_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "362_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "364_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "RAIL"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "366_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "36_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "371_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "377_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "380_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "384_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "386_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1993-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "SHIP"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}]
+	}
+}, {
+	"QueryNumber": "388_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "393_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "399_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "3_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "41_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "47_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "50_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "54_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "56_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "REG AIR"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "TRUCK"
+		}]
+	}
+}, {
+	"QueryNumber": "58_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "63_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "69_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "6_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "72_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "76_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}, {
+	"QueryNumber": "78_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_receiptdate",
+			"Value": "DATE '1997-01-01' + INTERVAL '1' year"
+		}],
+		"NestedOR": [{
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "MAIL"
+		}, {
+			"Operator": "=",
+			"ColumnName": "l_shipmode",
+			"Value": "TRUCK"
+		}]
+	}
+}, {
+	"QueryNumber": "80_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1994-09-01' + INTERVAL '1' month"
+		}]
+	}
+}, {
+	"QueryNumber": "85_generated.sql",
+	"ORPredicates": {
+		"NestedAND": [{
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "9"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "9 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "15"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "15 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}, {
+			"SimplePredicates": [{
+				"Operator": ">=",
+				"ColumnName": "l_quantity",
+				"Value": "30"
+			}, {
+				"Operator": "<=",
+				"ColumnName": "l_quantity",
+				"Value": "30 + 10"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipinstruct",
+				"Value": "'DELIVER IN PERSON'"
+			}],
+			"NestedOR": [{
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR"
+			}, {
+				"Operator": "=",
+				"ColumnName": "l_shipmode",
+				"Value": "AIR REG"
+			}]
+		}]
+	}
+}, {
+	"QueryNumber": "91_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1995-03-01'"
+		}]
+	}
+}, {
+	"QueryNumber": "94_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": ">=",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01'"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_shipdate",
+			"Value": "DATE '1996-01-01' + INTERVAL '1' year"
+		}, {
+			"Operator": "<",
+			"ColumnName": "l_quantity",
+			"Value": "24"
+		}]
+	}
+}, {
+	"QueryNumber": "98_generated.sql",
+	"ANDPredicates": {
+		"SimplePredicates": [{
+			"Operator": "=",
+			"ColumnName": "l_returnflag",
+			"Value": "'R'"
+		}]
+	}
+}]
