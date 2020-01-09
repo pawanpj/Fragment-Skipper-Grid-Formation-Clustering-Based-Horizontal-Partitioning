@@ -82,90 +82,99 @@ public class Parsing {
 
     public static void main(String[] args) throws IOException, JSQLParserException {
 //        CCJSqlParserManager pm = new CCJSqlParserManager();
+        QueryVectorGeneration qvg = new QueryVectorGeneration();
+        qvg.featurecreator();
+        qvg.getQueryVector();
         File folder = new File("C:\\Users\\Pawan Joshi\\tpch-dbgen\\queries\\Generated_Queries");
         File[] listOfFiles = folder.listFiles();
 
-        Hashtable<String,JSONObject> Dict= new Hashtable<>();
+        Hashtable<String, JSONObject> Dict = new Hashtable<>();
         JSONArray JSONMain = new JSONArray();
         FileWriter fw = new FileWriter("testout.json");
 
         //atleast one file in the folder
-        for (File file : listOfFiles) {
-            JSONObject Predicates = new JSONObject();
+        if (listOfFiles.length > 0) {
 
-            System.out.println(file);
-            BufferedReader br = new BufferedReader(new FileReader(file));    //we want to access the content line wise
-            StringBuilder mainstr = new StringBuilder();
-            String st;
-            int cnt = 0;  //flag to check for the first where keyword
-            if (Files.readString(Paths.get(String.valueOf(file))).contains("lineitem"))  // if line item present
 
-                while ((st = br.readLine()) != null)
-                    if (cnt == 0) {
-                        if (st.startsWith("where")) {
+            for (File file : listOfFiles) {
+                JSONObject Predicates = new JSONObject();
+
+                System.out.println(file);
+                BufferedReader br = new BufferedReader(new FileReader(file));    //we want to access the content line wise
+                StringBuilder mainstr = new StringBuilder();
+                String st;
+                int cnt = 0;  //flag to check for the first where keyword
+                if (Files.readAllLines(Paths.get(String.valueOf(file))).contains("lineitem"))  // if line item present
+
+                {
+                    while ((st = br.readLine()) != null)
+                        if (cnt == 0) {
+                            if (st.startsWith("where")) {
 //                                mainstr.append(st);   //JSQLParser does not need the keyword "where" while it parses for the predicates
-                            cnt += 1;
+                                cnt += 1;
+                            }
+                        } else if (!st.startsWith("go") && !st.startsWith("group") && !st.startsWith("order") && !st.startsWith("set")) {
+                            mainstr.append(st).append(" ");
                         }
-                    } else if (!st.startsWith("go") && !st.startsWith("group") && !st.startsWith("order") && !st.startsWith("set")) {
-                        mainstr.append(st).append(" ");
-                    }
+                }
 
-            System.out.println(mainstr.toString());
-            if (mainstr.toString().isEmpty()) {
-                continue;
-            }
+                System.out.println(mainstr.toString());
+                if (mainstr.toString().isEmpty()) {
+                    continue;
+                }
 //                parseWhereClauseToFilter(mainstr.toString());
-            try {
-                Expression expr;
+                try {
+                    Expression expr;
 
-                expr = CCJSqlParserUtil.parseCondExpression(mainstr.toString(), true);
+                    expr = CCJSqlParserUtil.parseCondExpression(mainstr.toString(), true);
 //                JSONObject jsoncontent = (JSONObject) getJSONContent(expr, Predicates);
-                if (expr instanceof AndExpression) {              //check if the expression is of type AND
-                    JSONObject interobj=new JSONObject();
-                    interobj= (JSONObject) getANDPredicates(expr);
-                    if(interobj.length()>0){
-                        Predicates.put("QueryNumber", file.getName());    //puts the query number as file name
-                        Predicates.put("ANDPredicates", interobj);  //gets the content inside the and block
+                    if (expr instanceof AndExpression) {              //check if the expression is of type AND
+                        JSONObject interobj = new JSONObject();
+                        interobj = (JSONObject) getANDPredicates(expr);
+                        if (interobj.length() > 0) {
+                            Predicates.put("QueryNumber", file.getName());    //puts the query number as file name
+                            Predicates.put("ANDPredicates", interobj);  //gets the content inside the and block
+
+                        }
+
+                    }
+                    if (expr instanceof OrExpression) {                 //checks if expression of type OR
+                        JSONObject interobj = new JSONObject();
+                        interobj = (JSONObject) getORPredicates(expr);
+                        if (interobj.length() > 0) {
+                            Predicates.put("QueryNumber", file.getName());
+                            Predicates.put("ORPredicates", interobj); //gets the content inside the or block
+
+                        }
 
                     }
 
-                }
-                if(expr instanceof OrExpression){                 //checks if expression of type OR
-                    JSONObject interobj=new JSONObject();
-                    interobj= (JSONObject) getORPredicates(expr);
-                    if(interobj.length()>0){
-                        Predicates.put("QueryNumber", file.getName());
-                        Predicates.put("ORPredicates", interobj); //gets the content inside the or block
-
+                    if (Predicates.length() > 0) {                //append each parsed files predicate along with the filename
+                        Dict.put(file.getName(), Predicates);
+                        JSONMain.put(Predicates);
+                        System.out.println(Predicates);
                     }
+                } catch (JSQLParserException | JSONException ignored) {
 
                 }
 
-                if(Predicates.length()>0) {                //append each parsed files predicate along with the filename
-                    Dict.put(file.getName(),Predicates);
-                    JSONMain.put(Predicates);
-                    System.out.println(Predicates);
+
+            }
+            Files.write(Paths.get("test.json"), (JSONMain).toString().getBytes());     //json format output
+            try (Writer writer = new FileWriter("MainCsvFile.csv")) {               //csv format output
+                writer.append("id").append(',').append("Filename").append(',').append("Predicates").append("\n");
+                int i = 1;
+                for (Map.Entry<String, JSONObject> entry : Dict.entrySet()) {
+                    String val = entry.getValue().toString();
+                    writer.append("" + i).append(',').append(entry.getKey())
+                            .append(',')
+                            .append(entry.getValue().toString())
+                            .append("\n");
+                    i++;
                 }
-            } catch (JSQLParserException | JSONException ignored) {
-
+            } catch (IOException ex) {
+                ex.printStackTrace(System.err);
             }
-
-
-        }
-        Files.write(Paths.get("test.json"),(JSONMain).toString().getBytes());     //json format output
-        try (Writer writer = new FileWriter("MainCsvFile.csv")) {               //csv format output
-            writer.append("id").append(',').append("Filename").append(',').append("Predicates").append("\n");
-            int i=1;
-            for (Map.Entry<String, JSONObject> entry : Dict.entrySet()) {
-                String val=entry.getValue().toString();
-                writer.append(""+i).append(',').append(entry.getKey())
-                        .append(',')
-                        .append(entry.getValue().toString())
-                        .append("\n");
-                i++;
-            }
-        } catch (IOException ex) {
-            ex.printStackTrace(System.err);
         }
 
     }
